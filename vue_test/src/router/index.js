@@ -6,6 +6,7 @@ import Hi1 from '@/components/Hi1'
 import Hi2 from '@/components/Hi2'
 import params from '@/components/params'
 import Error from '@/components/Error'
+import Count from '@/components/Count'
 
 Vue.use(Router) //Vue全局使用Router
 
@@ -48,6 +49,9 @@ export default new Router({
     },{ //404页面
     path:'*',
       component:Error
+    },{
+    path:'/count',
+      component:Count
     }
 
   ]
